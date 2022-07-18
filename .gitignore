@@ -41,8 +41,8 @@ vignettes/*.pdf
 .Renviron
 
 
-*build/*
-*dist/*
-*nbproject/*
-*makefile
+build/*
+dist/*
+Makefile
+nbproject/*
 *.inc
