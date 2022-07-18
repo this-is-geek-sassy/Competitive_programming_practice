@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+
+    int t; // t:= no. of testcases
+    cin >> t;
+
+    while (t--)
+    {
+        int a, b;
+        cin >> a >> b;
+
+        cout << min(a, b) << endl;
+    }
+    
+
+	return 0;
+}
