@@ -39,3 +39,10 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+
+*build/*
+*dist/*
+*nbproject/*
+*makefile
+*.inc
