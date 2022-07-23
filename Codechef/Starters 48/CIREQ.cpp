@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -35,9 +36,11 @@ int main() {
         for(auto i=0; i<n; i++)
             cin >> array[i];
 
-        for(auto i=0; i<n; i++)
-            cout << array[i] << "  ";
-        cout << endl;
+        sort(array.begin(), array.end());
+
+        // for(auto i=0; i<n; i++)
+        //     cout << array[i] << "  ";
+        // cout << endl;
 
         while (!is_all_zero(array))
         {
@@ -54,6 +57,8 @@ int main() {
                     array2[j] = array[i];
                     ++j;
                     array[i] = 0;
+                } else if ( (array[i] != 0) && (array[i] < j) ) {
+                    break;
                 }
             }
             if (array2[1] != -1)
