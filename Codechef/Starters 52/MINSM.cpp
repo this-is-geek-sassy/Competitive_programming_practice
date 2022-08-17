@@ -29,11 +29,13 @@ int main() {
         {
             long long int gcd = __gcd(arr[i], arr[i-1]);
             arr[i] = gcd;
-            sort(arr, arr+n);
+            //sort(arr, arr+n);
         }
         long long int sum = 0;
-        for (auto i = 0; i < n; i++)
+        for (auto i = 0; i < n; i++) {
             sum += arr[i];
+            // cout << arr[i] << " ";
+        }
         
         cout << sum << endl;
     }
