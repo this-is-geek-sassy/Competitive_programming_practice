@@ -16,7 +16,7 @@ int main() {
 
         a = (a+b+c+d+e) * p;
 
-        if(a>120 && a<=168)
+        if(a>120)
             cout << "Yes" << endl;
         else
             cout << "No" << endl;
