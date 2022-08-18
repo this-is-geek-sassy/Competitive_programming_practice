@@ -5,7 +5,10 @@
 #include "string.h"
 using namespace std;
 
-void flip(char *s, int i, int j) {
+void flip(char *s, int i, int j, int size) {
+
+    if(j >= size)
+        return;
 
     // string m = "";
     for (auto k=i; k<=j; k++) {
@@ -43,7 +46,7 @@ int main() {
                 for (auto j=0; j<n; j++) {
 
                     if(s[j] == '0') {
-                        flip( &s[0], j, j+k-1);
+                        flip( &s[0], j, j+k-1, n);
                         // i++;
                         break;
                     }
@@ -54,7 +57,7 @@ int main() {
             for (auto j=0; j<n; j++) {
 
                     if(s[j] == '1') {
-                        flip( &s[0], j, j+k-1);
+                        flip( &s[0], j, j+k-1, n);
                         // i++;
                         break;
                     }
